@@ -2,9 +2,10 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-  root: 'src', // директорія з вихідними файлами
+  root: 'src',
+  base: '/goit-js-hw-09/',
   build: {
-    outDir: '../dist', // куди збирати проект
+    outDir: '../dist',
     emptyOutDir: true,
     rollupOptions: {
       input: {
@@ -14,5 +15,4 @@ export default defineConfig({
       },
     },
   },
-  base: '/goit-js-hw-09/', // для GitHub Pages
 });
